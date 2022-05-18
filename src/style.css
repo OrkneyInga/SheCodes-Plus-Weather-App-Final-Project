@@ -30,15 +30,25 @@ li:first-letter {
   text-transform: capitalize;
 }
 
+.container {
+  background-image: url(https://elaborate-gumption-c03741.netlify.app/images/malmo.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  width: 1400px;
+  height: 700px;
+}
+
 .weather-app-wrapper {
   max-width: 600px;
-  margin: 30px auto;
+  margin: 0 auto;
 }
 
 .weather-app {
+  background-color: white;
   padding: 20px;
   border: 1px solid #dadde1;
-  border-radius: 5px;
+  border-radius: 30px;
 }
 
 .overview {
