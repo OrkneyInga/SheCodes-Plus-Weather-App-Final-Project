@@ -10,7 +10,17 @@
       integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Architects+Daughter&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/89b02a4490.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="src/style.css" />
     <title>Weather App</title>
   </head>
@@ -38,16 +48,18 @@
               </div>
             </div>
           </form>
-          <div class="overview">
-            <h1 id="city"></h1>
-            <ul>
-              <li>Last updated: <span id="date"></span></li>
-              <li id="description"></li>
-            </ul>
-          </div>
           <div class="row">
-            <div class="col-6">
-              <div class="weather-temperature">
+            <div class="col-7">
+              <h1 id="city"></h1>
+              <ul>
+                <li class="last-updated">Last updated: <span id="date"></span></li>
+                <li class="conditions">Humidity: <span id="humidity"></span>%</li>
+                <li class="conditions">Wind: <span id="wind"></span>km/hr</li>
+              </ul>
+            </div>
+            <div class="col-5 current-weather">
+              <h2 class="current-day">Sun 19:55</h2>
+                   <div class="weather-temperature">
                 <img
                   src="http://openweathermap.org/img/wn/02d@2x.png"
                   alt="sunny"
@@ -61,17 +73,13 @@
                   ></span
                 >
               </div>
-            </div>
-            <div class="col-6">
-              <ul>
-                <li>Humidity: <span id="humidity"></span>%</li>
-                <li>Wind: <span id="wind"></span>km/hr</li>
-              </ul>
-            </div>
+              <h3 id="description"></h3>
+              </div>
+          <div class="row">
             <div class="weather-forecast" id="forecast"></div>
           </div>
         </div>
-        <small>
+            <p><small>
           <a
             href="https://github.com/OrkneyInga/SheCodes-Plus-Week-7-Vanilla"
             target="_blank"
@@ -79,6 +87,7 @@
           >
           by Inga Gaudie
         </small>
+        </p>
       </div>
     </div>
     <script src="src/app.js"></script>
