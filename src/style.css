@@ -66,7 +66,7 @@ p {
 .weather-app {
   max-width: 700px;
   padding: 20px;
-  border: 1px solid #fff;
+  border: 2px solid #fff;
   border-radius: 30px;
   background: linear-gradient(to top, #84a2d8 0%, #2876a7 100%);
   box-shadow: 5px 5px 8px rgba(0, 0, 0, 0.3);
@@ -142,7 +142,7 @@ a:link {
 }
 
 .weather-forecast-temperature-min {
-  opacity: 0.5;
+  opacity: 0.6;
 }
 
 .weather-forecast-temperatures {
